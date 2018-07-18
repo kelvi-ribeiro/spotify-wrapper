@@ -1,7 +1,7 @@
 {
-  "name": "js-tdd-course",
+  "name": "spotify-wrapper",
   "version": "1.0.0",
-  "description": "Biblioteca do curso de JS com TDD na pratica",
+  "description": "A wrapper to work with the Spotify Web API",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kelvi-ribeiro/js-tdd-course.git"
+    "url": "git+https://github.com/kelvi-ribeiro/spotify-wrapper.git"
   },
   "keywords": [
     "js",
@@ -29,9 +29,9 @@
   "author": "Kelvi Martins Ribeiro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kelvi-ribeiro/js-tdd-course/issues"
+    "url": "https://github.com/kelvi-ribeiro/spotify-wrapper/issues"
   },
-  "homepage": "https://github.com/kelvi-ribeiro/js-tdd-course#readme",
+  "homepage": "https://github.com/kelvi-ribeiro/spotify-wrapper#readme",
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
