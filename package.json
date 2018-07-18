@@ -1,0 +1,46 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "Biblioteca do curso de JS com TDD na pratica",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
+    "prepush":"npm run test:coverage",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch --require babel-register",
+    "test:coverage": "nyc npm test",
+    "lint": "./node_modules/.bin/eslint src/*.js"
+  },
+  "nyc":{
+    "functions":80,
+    "lines":80,
+    "check-coverage":true,
+    "reporter":["text","html"],
+    "exclude":["tests/**"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvi-ribeiro/js-tdd-course.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Kelvi Martins Ribeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kelvi-ribeiro/js-tdd-course/issues"
+  },
+  "homepage": "https://github.com/kelvi-ribeiro/js-tdd-course#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "husky": "^1.0.0-rc.12",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
+  }
+}
