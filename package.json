@@ -17,7 +17,7 @@
     "prepush": "npm run test:coverage",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch --require babel-register",
     "test:coverage": "nyc npm test",
-    "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls",
+    "test:coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls",
     "lint": "./node_modules/.bin/eslint src/*.js"
   },
   "nyc": {
