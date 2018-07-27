@@ -72,7 +72,7 @@ describe('SpotifyWrapper library',()=>{
 
       const headers = {
         headers:{
-          Authorization:`Bearer foo`
+          Authorization:`'Bearer foo'`
         },
       }
       
