@@ -7,12 +7,12 @@ export default {
   output: {
     path: join(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'spotifyWrapper',
+    library: 'SpotifyWrapper',
   },
   devtool: 'source-map',
   module: {
-    rules: [
-      { test: /\.js$/, use: 'babel-loader' },
+    loaders: [
+      {test: /\.js$/, loader: 'babel-loader', include},
     ]
   }
 }
